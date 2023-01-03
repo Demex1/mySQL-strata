@@ -1,7 +1,10 @@
 question:
 Find the gender that has made the most number of doctor appointments.Output the gender along with the corresponding number of appointments.
 
-solution:
+link:
+https://platform.stratascratch.com/coding/10170-gender-with-most-doctor-appointments?tabname=question&code_type=3
+
+my solution:
 select gender, COUNT(*) as gender_number
 from medical_appointments
 group by gender

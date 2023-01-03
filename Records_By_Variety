@@ -1,0 +1,14 @@
+question:
+Find the total number of records that belong to each variety in the dataset. Output the variety along with the corresponding number of records. Order records by the variety in ascending order.
+
+link:
+https://platform.stratascratch.com/coding/10168-number-of-records-by-variety?code_type=3
+
+my solution:
+select variety,
+SUM(sepal_length) as sepal_length,
+SUM(sepal_width) as sepal_width,
+SUM(petal_length) as petal_length,
+SUM(petal_width) as petal_width
+from iris
+group by variety;

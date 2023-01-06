@@ -1,0 +1,9 @@
+Question:
+Find all posts which were reacted to with a heart. For such posts output all columns from facebook_posts table.
+
+Link:
+https://platform.stratascratch.com/coding/10087-find-all-posts-which-were-reacted-to-with-a-heart?code_type=3
+
+My solution:
+select * from facebook_reactions
+where reaction = "heart";

@@ -1,0 +1,9 @@
+Question:
+Find workers and their corresponding information from the table with an even number for their worker id.
+
+Link:
+https://platform.stratascratch.com/coding/10137-find-workers-with-an-even-number-for-worker-id?code_type=3
+
+My solution:
+select * from worker
+where worker_id in(select worker_id from worker where worker_id%2 = 0);

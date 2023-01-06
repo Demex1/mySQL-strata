@@ -1,0 +1,10 @@
+Question:
+Find the total number of searches for houses in Westlake neighborhood with a TV among the amenities.
+
+Link:
+https://platform.stratascratch.com/coding/10122-find-the-total-number-of-searches-for-houses-westlake-neighborhood-with-a-tv?code_type=3
+
+My solution:
+select property_type, count(amenities)
+from airbnb_search_details
+where property_type = "House" AND amenities LIKE "%TV%";

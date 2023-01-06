@@ -1,0 +1,12 @@
+Question:
+Find the average number of stars for each state.
+Output the state name along with the corresponding average number of stars.
+
+
+Link:
+https://platform.stratascratch.com/coding/10052-find-the-average-number-of-stars-for-each-state?code_type=3
+
+My solution:
+select state, ROUND(avg(stars), 2) as average_stars
+from yelp_business
+group by state;

@@ -1,0 +1,11 @@
+Question:
+Find the number of crime occurrences for each day of the week.
+Output the day alongside the corresponding crime count.
+
+Link:
+https://platform.stratascratch.com/coding/10132-highest-crime-rate?code_type=3
+
+My solution:
+select day_of_week, COUNT(incidnt_num) as number_of_crime
+from sf_crime_incidents_2014_01
+group by day_of_week;

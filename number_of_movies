@@ -1,0 +1,11 @@
+Question:
+Count the number of movies that Abigail Breslin was nominated for an oscar.
+
+Link:
+https://platform.stratascratch.com/coding/10128-count-the-number-of-movies-that-abigail-breslin-nominated-for-oscar?code_type=3
+
+My solution:
+select count(movie) number_of_nomited_nominated
+from oscar_nominees
+where nominee = "Abigail Breslin"
+group by nominee;

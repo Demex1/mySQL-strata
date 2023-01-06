@@ -1,0 +1,10 @@
+Question:
+Find the number of open businesses.
+
+Link:
+https://platform.stratascratch.com/coding/10051-find-the-number-of-open-businesses?code_type=3
+
+My solution:
+select count(is_open) as number_of_open_businesses
+from yelp_business
+where is_open = 1;

@@ -1,0 +1,10 @@
+Question:
+Find records with the value '?' in the stars column.
+
+Link:
+https://platform.stratascratch.com/coding/10055-records-with?code_type=3
+
+My solution:
+select * 
+from yelp_reviews
+where stars = "?";

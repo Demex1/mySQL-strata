@@ -1,0 +1,14 @@
+Question:
+Find the number of reviews received by Lo-Lo's Chicken & Waffles for each star.
+Output the number of stars along with the corresponding number of reviews.
+Sort records by stars in ascending order.
+
+Link:
+https://platform.stratascratch.com/coding/10058-find-the-number-of-reviews-received-by-lo-los-chicken-waffles-for-each-star?code_type=3
+
+My solution:
+select stars, count(review_id) as number_of_review
+from yelp_reviews
+where business_name = "Lo-Lo's Chicken & Waffles"
+group by stars
+order by stars asc;

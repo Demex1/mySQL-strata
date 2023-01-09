@@ -9,3 +9,4 @@ select count(movie) number_of_nomited_nominated
 from oscar_nominees
 where nominee = "Abigail Breslin"
 group by nominee;
+ 

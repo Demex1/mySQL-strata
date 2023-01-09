@@ -1,0 +1,12 @@
+Question:
+Find the average cost of each request status.
+Request status can be either 'success' or 'fail'.
+Output the request status along with the average cost.
+
+Link:
+https://platform.stratascratch.com/coding/10007-average-cost-of-each-request?code_type=3
+
+My solutiom:
+select request_status, AVG(monetary_cost) as avearge_cost
+from uber_ride_requests
+group by request_status;

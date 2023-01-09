@@ -7,3 +7,4 @@ https://platform.stratascratch.com/coding/10137-find-workers-with-an-even-number
 My solution:
 select * from worker
 where worker_id in(select worker_id from worker where worker_id%2 = 0);
+

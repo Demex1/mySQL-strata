@@ -1,0 +1,11 @@
+Question:
+Find prices for Spanish, Italian, and French wines. Output the price
+
+Link:
+https://platform.stratascratch.com/coding/10020-find-prices-for-spanish-italian-and-french-wines?code_type=3
+
+
+My solution:
+select distinct winery, price, country 
+from winemag_p1
+where country in ("Spain", "Italy", "France");

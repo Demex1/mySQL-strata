@@ -7,3 +7,4 @@ https://platform.stratascratch.com/coding/10164-total-adwords-earnings?code_type
 my Solution:
 select business_type, sum(adwords_earnings) AS sum FROM google_adwords_earnings
 group by business_type;
+

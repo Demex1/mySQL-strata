@@ -9,3 +9,4 @@ select gender, COUNT(*) as gender_number
 from medical_appointments
 group by gender
 order by count(*) DESC;
+

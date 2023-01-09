@@ -1,0 +1,13 @@
+Question:
+Find the average distance traveled in each hour.
+Output the hour along with the corresponding average traveled distance.
+Sort records by the hour in ascending order.
+
+Link:
+https://platform.stratascratch.com/coding/10006-find-the-average-distance-traveled-in-each-hour?code_type=3
+
+My solution:
+select hour, avg(travel_distance) AS average_distance
+from lyft_rides
+group by hour
+order by hour asc;

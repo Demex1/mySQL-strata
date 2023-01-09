@@ -1,0 +1,12 @@
+Question:
+Find the total costs and total customers acquired in each year.
+Output the year along with corresponding total money spent and total acquired customers.
+
+Link:
+https://platform.stratascratch.com/coding/10009-find-the-total-costs-and-total-customers-acquired-in-each-year?code_type=3
+
+My soution:
+select year, SUM(money_spent) as total_money, 
+SUM(customers_acquired) as total_customers
+from uber_advertising
+group by year;

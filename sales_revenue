@@ -8,3 +8,4 @@ My solution:
 select SUM(sales_revenue) as total
 from sales_performance
 where salesperson IN ("Samantha","Lisa");
+ 

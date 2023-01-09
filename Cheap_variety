@@ -1,0 +1,12 @@
+Question:
+Find all wine varieties which can be considered cheap based on the price.
+A variety is considered cheap if the price of a bottle lies between 5 to 20 USD.
+Output unique variety names only.
+
+Link:
+https://platform.stratascratch.com/coding/10022-find-all-wine-varieties-which-can-be-considered-cheap-based-on-the-price?code_type=3
+
+My solutin:
+select distinct variety as cheap_variety
+from winemag_p1
+where price between 5 and 20;

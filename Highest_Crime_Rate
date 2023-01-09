@@ -9,3 +9,4 @@ My solution:
 select day_of_week, COUNT(incidnt_num) as number_of_crime
 from sf_crime_incidents_2014_01
 group by day_of_week;
+ 

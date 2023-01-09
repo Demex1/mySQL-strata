@@ -12,3 +12,4 @@ SUM(petal_length) as petal_length,
 SUM(petal_width) as petal_width
 from iris
 group by variety;
+ 

@@ -1,0 +1,13 @@
+Question:
+Find songs that are ranked between 8-10.
+Output the track name along with the corresponding position, ordered ascendingly.
+
+Link:
+https://platform.stratascratch.com/coding/9999-find-songs-that-are-ranked-between-8-10?code_type=3
+
+
+My solution:
+select trackname, position
+from spotify_worldwide_daily_song_ranking
+where position between 8 and 10
+order by position asc;

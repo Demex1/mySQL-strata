@@ -7,3 +7,4 @@ https://platform.stratascratch.com/coding/10136-find-workers-with-an-odd-number-
 My solution:
 select * from worker
 where worker_id IN(select worker_id from worker where worker_id%2 = 1);
+

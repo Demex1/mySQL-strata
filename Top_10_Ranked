@@ -1,0 +1,12 @@
+Question:
+Find the top 10 ranked songs by position. Output the track name along with the corresponding position and sort records by the position in descending order and track name alphabetically, as there are many tracks that are tied for the same position.
+
+
+Link:
+https://platform.stratascratch.com/coding/9995-top-10-ranked-songs?code_type=3
+
+My solution:
+select trackname, position
+from spotify_worldwide_daily_song_ranking
+where position between 1 and 10
+order by position desc, trackname asc;

@@ -1,0 +1,13 @@
+Question:
+Find benefits that people with the name 'Patrick' have.
+Output the employee name along with the corresponding benefits.
+
+
+Link:
+https://platform.stratascratch.com/coding/9974-benefits-of-employees-called-patric?tabname=question
+
+
+My solution:
+select employeename, totalpaybenefits
+from sf_public_salaries
+where employeename like "%Patrick%";

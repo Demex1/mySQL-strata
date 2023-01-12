@@ -1,0 +1,15 @@
+Question:
+Get the job titles of the 3 employees who received the most overtime pay
+Output the job title of selected records.
+
+
+Link:
+https://platform.stratascratch.com/coding/9988-find-the-top-3-jobs-with-the-highest-overtime-pay-rate?code_type=3
+
+
+My solution:
+select jobtitle
+from sf_public_salaries
+group by employeename
+order by overtimepay desc
+limit 3;

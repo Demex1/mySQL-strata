@@ -1,0 +1,13 @@
+Question:
+Find job titles that had 0 hours of overtime.
+Output unique job title names.
+
+
+Link:
+https://platform.stratascratch.com/coding/9973-find-job-titles-which-had-0-hours-of-overtime?code_type=3
+
+
+My solution:
+select distinct jobtitle
+from sf_public_salaries
+where overtimepay = 0;

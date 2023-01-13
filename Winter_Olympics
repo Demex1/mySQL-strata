@@ -1,0 +1,16 @@
+Question:
+Find the lowest, average, and the highest ages of athletes across all Olympics. HINT: If athlete participated in more than one discipline at one Olympic games, consider it as a separate athlete, no need to remove such edge cases.
+
+
+
+
+Link:
+https://platform.stratascratch.com/coding/9943-winter-olympics-events-list-by-height?code_type=3
+
+
+My solution:
+select games, avg(age) as average_age, 
+min(age) as youngest, 
+max(age) as oldest
+from olympics_athletes_events
+group by games;

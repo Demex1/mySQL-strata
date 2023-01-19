@@ -1,0 +1,13 @@
+Question:
+Find the average total checkouts from Chinatown libraries in 2016.
+
+
+Link:
+https://platform.stratascratch.com/coding/9929-find-the-average-total-checkouts-from-chinatown-libraries-in-2016?code_type=3
+
+
+My solution:
+select AVG(total_checkouts)
+from library_usage
+where home_library_definition = "Chinatown" and circulation_active_year = 2016;
+

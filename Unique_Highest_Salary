@@ -1,0 +1,15 @@
+Question:
+Find the highest salary among salaries that appears only once.
+
+
+Link:
+https://platform.stratascratch.com/coding/9919-unique-highest-salary?code_type=3
+
+
+My solution:
+SELECT salary
+FROM employee
+GROUP BY salary
+HAVING COUNT(*) = 1
+order by salary desc
+limit 1;

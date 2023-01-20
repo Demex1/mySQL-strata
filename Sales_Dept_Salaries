@@ -1,0 +1,16 @@
+Question:
+Find employees in the Sales department who achieved a target greater than 150.
+Output first names of employees.
+Sort records by the first name in descending order.
+
+
+Link:
+https://platform.stratascratch.com/coding/9920-sales-dept-salaries?code_type=3
+
+
+
+My solution:
+select CONCAT(first_name,' ',last_name) as names
+from employee
+where target > 150
+order by first_name DESC;

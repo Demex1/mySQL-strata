@@ -1,0 +1,15 @@
+Question:
+Find the number of libraries that had 100 or more of total checkouts in February 2015. Be aware that there could be more than one row for certain library on monthly basis.
+
+
+
+Link:
+https://platform.stratascratch.com/coding/9923-100-total-checkouts-libraries?code_type=3
+
+
+My solution:
+select home_library_definition
+from library_usage
+where (circulation_active_month = "February") and (circulation_active_year = 2015)
+group by home_library_definition
+having sum(total_checkouts) >= 100;

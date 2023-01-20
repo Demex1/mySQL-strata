@@ -1,0 +1,17 @@
+Question:
+Find the number of employees in each department.
+Output the department name along with the corresponding number of employees.
+Sort records based on the number of employees in descending order.
+
+
+
+
+Link:
+https://platform.stratascratch.com/coding/9906-number-of-employees-per-department?code_type=3
+
+
+My solution:
+select department, count(id) as number_of_employees
+from employee
+group by department
+order by count(id) desc;

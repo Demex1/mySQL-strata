@@ -1,0 +1,18 @@
+Question:
+Find departments with at more than or equal 5 employees.
+
+
+
+
+
+Link:
+https://platform.stratascratch.com/coding/9911-departments-with-5-employees?code_type=3
+
+
+
+
+My solution:
+select department
+from employee
+group by department
+having count(id) >= 5;
